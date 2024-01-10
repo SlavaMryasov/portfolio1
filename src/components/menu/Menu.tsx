@@ -1,11 +1,13 @@
 import styled from "styled-components"
 
+// {name: string, link: string}
 
-export const Menu = (props: { menuItems: Array<string> }) => {
+
+export const Menu = (props: { menuItems: Array<{name: string, link?: string}> }) => {
     return (
         <StyledMenu>
             <ul>
-                {props.menuItems.map((item, index) => <li key={index}><a href="">{item}</a></li>)}
+                {props.menuItems.map((item, index) => <li role="menuitem"  key={index}><a href={item.link}>{item.name}</a></li>)}
             </ul>
         </StyledMenu>
     )

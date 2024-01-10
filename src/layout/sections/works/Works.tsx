@@ -6,7 +6,7 @@ import { Work } from "./work/Work";
 import socialImg from "../../../assets/images/proj_1.webp"
 import timerImg from "../../../assets/images/proj_2.webp"
 
-const worksItems = ['ALL','Landing Page', 'React', 'SPA'];
+const worksItems = [{name:'ALL'},{name:'Landing Page'}, {name:'React'}, {name:'SPA'}];
 
 export const Works = () => {
     return(
@@ -14,10 +14,10 @@ export const Works = () => {
             <SectionTitle>My Works</SectionTitle>
             <Menu menuItems={worksItems}/>
             <FlexWrapper justify="space-around">
-                <Work title="Social Network" src={socialImg}
+                <Work alt="social network" title="Social Network" src={socialImg}
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit."/>
                 
-                <Work title="Timer" src={timerImg}
+                <Work alt="timer" title="Timer" src={timerImg}
                 text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit ut labore et dolore magna aliqua Ut enim"/>
             </FlexWrapper>
         </StyledWorks>

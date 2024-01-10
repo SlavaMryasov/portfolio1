@@ -10,25 +10,25 @@ export const Footer = () => {
                 <Name>Slava</Name>
                 <SocialList>
 
-                    <SocialItem>
+                    <SocialItem tabIndex={2}>
                         <SocialLink>
                             <Icon iconId="instagram" height="21px" width="21px" viewBox="0 0 21px 21px"/>
                         </SocialLink>
                     </SocialItem>
 
-                    <SocialItem>
+                    <SocialItem tabIndex={1}>
                         <SocialLink>
                             <Icon iconId="telegram" height="21px" width="21px" viewBox="0 0 21px 21px"/>
                         </SocialLink>
                     </SocialItem>
 
-                    <SocialItem>
+                    <SocialItem tabIndex={4}>
                         <SocialLink>
                             <Icon iconId="vk" height="21px" width="21px" viewBox="0 0 21px 21px"/>
                         </SocialLink>
                     </SocialItem>
 
-                    <SocialItem>
+                    <SocialItem tabIndex={3}>
                         <SocialLink>
                             <Icon iconId="linkedin" height="21px" width="21px" viewBox="0 0 21px 21px"/>
                         </SocialLink>

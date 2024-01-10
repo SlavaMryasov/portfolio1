@@ -2,7 +2,13 @@ import styled from "styled-components"
 import { Logo } from "../../components/logo/Logo"
 import { Menu } from "../../components/menu/Menu"
 
-const items = ['Home','Skills', 'Works', 'Testimony', 'Contact']
+    const items = [
+        {name: "Home", link: "#Home"},
+        {name: "Skills", link: "#Skills"},
+        {name: "Works", link: "#Works"},
+        {name: "Testimony", link: "#Testimony"},
+        {name: "Contact", link: "#Contact"}
+    ]
 
 export const Header = () => {
     return (

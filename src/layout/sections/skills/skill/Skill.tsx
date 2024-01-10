@@ -9,7 +9,7 @@ type SkillPropsType = {
 
 export const Skill= (props: SkillPropsType) => {
     return(
-        <StyledSkill>
+        <StyledSkill role="menuitem">
         <Icon iconId={props.iconId}/>
         <SkillTitle>{props.title}</SkillTitle>
         <SkillText>{props.description}</SkillText>

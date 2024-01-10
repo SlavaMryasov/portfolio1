@@ -11,7 +11,7 @@ export const Main = () => {
                     <h2>I am Slava Mryasov</h2>
                     <MainTitle>A Web Developer</MainTitle>
                 </div>
-                <Photo src={photo} />
+                <Photo alt="my photo" src={photo} />
             </FlexWrapper>
         </StyledMain>
     )

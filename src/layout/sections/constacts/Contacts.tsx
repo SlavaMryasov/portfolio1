@@ -8,9 +8,9 @@ export const Contacts = () => {
         <StyledContacts>
             <SectionTitle>Contacts</SectionTitle>
             <StyledForm>
-                <StyledField placeholder="name"/>
-                <StyledField placeholder="subject"/>
-                <StyledField placeholder="message" as={"textarea"}/>
+                <StyledField aria-placeholder="name" placeholder="name"/>
+                <StyledField aria-placeholder="subjects" placeholder="subject"/>
+                <StyledField aria-placeholder="message" placeholder="message" as={"textarea"}/>
                 <Button type="submit">Send message</Button>            
             </StyledForm>
         </StyledContacts>

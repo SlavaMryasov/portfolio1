@@ -3,14 +3,15 @@ import styled from "styled-components"
 type WorkPropsType = {
 title: string,
 text: string,
-src: string
+src: string,
+alt: string
 }
 
 
 export const Work = (props: WorkPropsType) => {
     return (
 <StyledWork>
-<Image src={props.src}/>
+<Image alt={`image with ${props.alt}`} src={props.src} />
 <Title>{props.title}</Title>
 <Text>{props.text}</Text>
 <Link href='#'>demo</Link>
