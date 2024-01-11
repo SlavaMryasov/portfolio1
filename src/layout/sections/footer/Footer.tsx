@@ -35,7 +35,7 @@ export const Footer = () => {
                     </SocialItem>
 
                 </SocialList>
-                <Copyright>© 2023 Slava Mryasov, All Rights Reserved.</Copyright>
+                <Copyright>© 2024 Slava Mryasov, All Rights Reserved.</Copyright>
             </FlexWrapper>
         </StyledFooter>
     )
@@ -51,6 +51,7 @@ const Name = styled.span`
 const SocialList = styled.ul`
     display: flex;
     gap: 20px;
+    list-style: none;
 `
 const SocialItem = styled.li`
  

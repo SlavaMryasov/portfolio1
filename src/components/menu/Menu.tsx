@@ -18,5 +18,13 @@ const StyledMenu = styled.nav`
         display: flex;
         gap: 30px;
         justify-content: center;
+        list-style: none;
+        
+        li{
+            a{
+                text-decoration: none;
+        }
+        }
+        
     }
 `
