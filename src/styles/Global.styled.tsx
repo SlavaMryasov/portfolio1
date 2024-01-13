@@ -18,7 +18,8 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: ${Theme.colors.font}
+  color: ${Theme.colors.font};
+  line-height: 1.2;
 }
 
 a {
@@ -32,6 +33,10 @@ ul{
 button{
     background-color: unset;
     border: none;
+}
+
+section {
+    padding: 100px 0;
 }
 
 section:nth-of-type(odd) {
