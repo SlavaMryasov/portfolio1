@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Icon } from "../../../components/icon/Icon"
 import { FlexWrapper } from "../../../components/FlexWrapper"
+import { Theme } from "../../../styles/Theme"
 
 
 export const Footer = () => {
@@ -35,31 +36,53 @@ export const Footer = () => {
                     </SocialItem>
 
                 </SocialList>
-                <Copyright>© 2024 Slava Mryasov, All Rights Reserved.</Copyright>
+                <Copyright>© 2024 Slava Mryasov, Everything will be fine!</Copyright>
             </FlexWrapper>
         </StyledFooter>
     )
 }
 
 const StyledFooter = styled.footer`
-    background-color: #ffab0f;
-    min-height: 20vh;
+    background-color: ${Theme.colors.primaryBg};
+    padding: 40px 0;
 `
 const Name = styled.span`
+font-family: "Josefin Sans", sans-serif;
+font-size: 22px;
+font-weight: 700;
+letter-spacing: 3px;
     
 `
 const SocialList = styled.ul`
     display: flex;
     gap: 20px;
     list-style: none;
+    margin: 30px 0;
 `
 const SocialItem = styled.li`
- 
+
 `
 
 const SocialLink = styled.a`
-    
+    border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.10);
+height: 35px;
+width: 35px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+color: ${Theme.colors.accent};
+
+&:hover {
+    color: ${Theme.colors.primaryBg};
+    transform: translateY(-4px);
+}
 `
 const Copyright = styled.small`
-    
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+opacity: 0.5;
 `

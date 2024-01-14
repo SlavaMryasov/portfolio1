@@ -20,7 +20,7 @@ from {
 to {
     transform: rotate(90deg);
     margin-left: 200px;
-    position: absolute;
+   
 }
 
 `
